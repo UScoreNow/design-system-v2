@@ -1,4 +1,4 @@
-# Sistema Tipográfico — UScoreNow (tema editorial "newsprint")
+# Sistema Tipográfico — UScoreNow (tema editorial AtomSN)
 
 > **Versión:** 2.1 · **Plataforma:** Flutter (mobile-first + web) · **Modelo:** FAMILIA ÚNICA (ElmsSans)
 

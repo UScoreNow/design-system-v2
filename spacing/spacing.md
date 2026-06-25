@@ -1,4 +1,4 @@
-# Sistema de Espaciado — Tema editorial "newsprint"
+# Sistema de Espaciado — Tema editorial AtomSN
 
 > **Versión:** 2.0 · **Plataforma:** Flutter (mobile-first + web) · **Unidad base:** 4px
 
@@ -8,7 +8,7 @@ Sistema de espaciado basado en múltiplos de 4px. Garantiza ritmo visual consist
 
 El espaciado debe sentirse cómodo, predecible y estructural. La densidad por defecto es media: ni demasiado comprimida para pantallas de datos, ni demasiado abierta para una app de consulta rápida de resultados.
 
-En la v2 newsprint el espaciado adopta el lenguaje del periódico: la maquetación se ordena con reglas (filos hairline 1px, regla de sección 2px), columnas con un gutter fijo y kickers/overlines pegados a su titular. Las esquinas tienden a lo recto: el periódico prefiere el filo, y `radius.none` es el borde editorial por defecto de reglas, sellos y tablas. `radius.md` se mantiene como el estándar de cards.
+En AtomSN el espaciado adopta el lenguaje del periódico: la maquetación se ordena con reglas (filos hairline 1px, regla de sección 2px), columnas con un gutter fijo y kickers/overlines pegados a su titular. Las esquinas tienden a lo recto: el periódico prefiere el filo, y `radius.none` es el borde editorial por defecto de reglas, sellos y tablas. `radius.md` se mantiene como el estándar de cards.
 
 ---
 
@@ -314,7 +314,7 @@ semantic_spacing:
       description: separación estándar entre elementos en línea
       value: space.3   # 12px
 
-  # --- Tokens editoriales newsprint ---
+  # --- Tokens editoriales AtomSN ---
 
   column:
     - token: spacing.column.gap

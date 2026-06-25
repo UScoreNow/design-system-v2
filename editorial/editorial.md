@@ -1,10 +1,10 @@
-# Utillaje editorial — Tema "newsprint"
+# Utillaje editorial — Tema AtomSN
 
-> **Versión:** 2.0 · **Plataforma:** Flutter (mobile-first + web) · **Temas:** light "Paper" / dark "Night Press"
+> **Versión:** 2.0 · **Plataforma:** Flutter (mobile-first + web) · **Temas:** light "AtomSN Light" / dark "AtomSN Dark"
 
 ## Dirección visual
 
-Este capítulo no existe en el sistema anterior. Documenta el **utillaje de periódico** (editorial devices) que la v2 newsprint añade sobre la base de colores, tipografía y espaciado: las piezas concretas que hacen que una pantalla de resultados se lea como una página de prensa deportiva y no como una UI neutra.
+Este capítulo no existe en el sistema anterior. Documenta el **utillaje de periódico** (editorial devices) que AtomSN añade sobre la base de colores, tipografía y espaciado: las piezas concretas que hacen que una pantalla de resultados se lea como una página de prensa deportiva y no como una UI neutra.
 
 Todo el utillaje resuelve sobre tokens existentes en `tokens.json`. No introduce tokens nuevos: combina reglas (`border.*`), tinta (`color.ink.*`), papel (`color.paper.*`), tipografía duotono (serif `text.masthead`/`text.headline` + sans `text.*`) y los semánticos editoriales (`accent.ink`, `highlight.mark`, `status.live`, `text.overline`, `spacing.column.gap`, `spacing.overline.gap`).
 
@@ -210,7 +210,7 @@ Pseudocódigo Flutter en la sección final.
 
 ## 10. Textura / halftone (OPCIONAL — off por defecto)
 
-**Nombre:** newsprint texture / halftone (opcional).
+**Nombre:** textura editorial / halftone (opcional).
 **Propósito:** insinuar la trama de impresión del papel de periódico con un grano o semitono muy tenue sobre el fondo. Es un acabado, no un componente.
 
 **Estado:** **opcional y desactivado por defecto.** No forma parte del render base y no debe activarse si compromete el contraste.
@@ -230,7 +230,7 @@ Pseudocódigo Flutter en la sección final.
 
 ## Ejemplos en pseudocódigo Flutter
 
-> Los colores se toman del theme activo (light "Paper" / dark "Night Press") resolviendo el token semántico correspondiente; aquí se anotan como comentario.
+> Los colores se toman del theme activo (light "AtomSN Light" / dark "AtomSN Dark") resolviendo el token semántico correspondiente; aquí se anotan como comentario.
 
 ### Regla hairline entre filas
 

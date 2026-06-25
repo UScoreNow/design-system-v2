@@ -1,12 +1,12 @@
-# Sistema de Iconos — UScoreNow newsprint
+# Sistema de Iconos — UScoreNow AtomSN
 
-> **Versión:** 2.0 · **Tema:** newsprint · **Plataforma:** Flutter (mobile-first + web) · **Librería:** Hugeicons
+> **Versión:** 2.0 · **Tema:** AtomSN · **Plataforma:** Flutter (mobile-first + web) · **Librería:** Hugeicons
 
 ## Dirección visual
 
 Sistema iconográfico editorial para una app de gestión de torneos de fútbol construida en Flutter con Hugeicons.
 
-La iconografía debe sentirse ligera, clara y estructural, como el utillaje gráfico de un periódico deportivo: trazo de tinta fino sobre papel, sin relleno ni dramatismo. Los iconos acompañan navegación, acciones y estados del producto, pero nunca compiten con el contenido principal (titulares serif, marcadores tabulares, reglas hairline). En el lenguaje newsprint el peso visual lo cargan la tipografía y las reglas; el icono es notación, no ilustración.
+La iconografía debe sentirse ligera, clara y estructural, como el utillaje gráfico de un periódico deportivo: trazo de tinta fino sobre papel, sin relleno ni dramatismo. Los iconos acompañan navegación, acciones y estados del producto, pero nunca compiten con el contenido principal (titulares serif, marcadores tabulares, reglas hairline). En el lenguaje editorial de AtomSN el peso visual lo cargan la tipografía y las reglas; el icono es notación, no ilustración.
 
 ---
 

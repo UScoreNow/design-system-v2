@@ -1,9 +1,9 @@
-# AtomSN — Design System · Tema editorial "newsprint"
+# AtomSN — Design System · Tema editorial AtomSN
 
 > **Versión:** 2.0
 > **Estado:** En desarrollo
 > **Plataforma:** Flutter · mobile-first · con soporte Flutter Web
-> **Modos:** light ("Paper") · dark ("Night Press")
+> **Modos:** light ("AtomSN Light") · dark ("AtomSN Dark")
 > **Stack:** Dart / Flutter · Hugeicons · ElmsSans (sans)
 
 Sistema de diseño para la app de gestión de torneos de fútbol UScoreNow. Evoluciona el sistema minimalista de v1 hacia un aire de **periódico deportivo de verdad**: base apapelada crema sobre la que se imprime tinta cálida, con verde césped y negro tinta como únicos acentos. El contenido —marcadores, clasificaciones, crónicas— manda; el utillaje editorial (reglas hairline, kickers en mayúsculas, líderes punteados, cifras tabulares, sellos de tinta) le da voz de prensa sin ruido cromático.
@@ -74,7 +74,7 @@ Sistema cromático editorial: **papel crema** como base estructural, **tinta cá
 - **Verde** (`color.green.500` `#3E8E45`): acción primaria y estados activos. `green.700` `#27592C` para texto/enlaces sobre papel (AA).
 - **Estado**: `red` (live/error), `yellow` (tarjeta/warning + highlight marker), `indigo` (solo `status.info`, uso escaso heredado de v1).
 - **Highlight marker**: `highlight.mark` → wash `yellow.100` tras stats/records clave.
-- Semánticos con mapeo explícito light ("Paper") / dark ("Night Press").
+- Semánticos con mapeo explícito light ("AtomSN Light") / dark ("AtomSN Dark").
 
 Convención: `color.{familia}.{escala}` (base) · `color.{categoría}.{rol}` y `text.{grupo}.{nivel}` (semánticos).
 
@@ -160,8 +160,8 @@ flutter:
 ```dart
 // main.dart
 MaterialApp(
-  theme: UScoreTheme.light,      // "Paper"
-  darkTheme: UScoreTheme.dark,   // "Night Press"
+  theme: UScoreTheme.light,      // "AtomSN Light"
+  darkTheme: UScoreTheme.dark,   // "AtomSN Dark"
 );
 ```
 

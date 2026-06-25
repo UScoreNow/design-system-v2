@@ -1,12 +1,12 @@
-# Sistema de Colores — Tema editorial "newsprint"
+# Sistema de Colores — Tema editorial AtomSN
 
-> **Versión:** 2.0 · **Plataforma:** Flutter (mobile-first + web) · **Temas:** light "Paper" / dark "Night Press"
+> **Versión:** 2.0 · **Plataforma:** Flutter (mobile-first + web) · **Temas:** light "AtomSN Light" / dark "AtomSN Dark"
 
 ## Dirección visual
 
 El sistema cromático evoluciona del minimalismo neutro anterior (grises fríos + verde único) hacia un aire de **periódico de verdad**. Cuatro materiales definen la paleta:
 
-- **Papel crema (newsprint):** la base deja de ser gris frío y pasa a una rampa apapelada cálida (`color.paper.*`). El papel ligeramente tintado reduce la fatiga visual, da profundidad sin blancos puros y evoca la prensa deportiva impresa.
+- **Papel crema:** la base deja de ser gris frío y pasa a una rampa apapelada cálida (`color.paper.*`). El papel ligeramente tintado reduce la fatiga visual, da profundidad sin blancos puros y evoca la prensa deportiva impresa.
 - **Tinta cálida:** el texto y los destacados son tinta (`color.ink.*`), un negro que lleva un susurro del tono papel para no enfriarse sobre crema. `ink.900` (`#0E0D0A`) es el negro de tinta más oscuro: sellos, masthead y destacados.
 - **Verde césped cálido:** acento único de interacción (`color.green.*`). Escaso: solo acciones, estados activos/seleccionados y deltas positivos.
 - **Negro tinta:** segundo acento editorial, reservado a destacados y sellos (`accent.ink`).
@@ -20,8 +20,8 @@ Todo lo que no sea acción debe sentirse como **tinta sobre papel**.
 - La interfaz vive sobre papel crema, no sobre blanco de pantalla.
 - El verde destaca acciones, estados activos y elementos clave; nunca decora.
 - El negro tinta (`ink.900`) es para destacados de alto contraste y sellos editoriales ("FINAL"), no para texto de cuerpo (ese es `ink.700`).
-- El tema claro "Paper" usa fondo crema, tinta para texto y acentos verde/negro.
-- El tema oscuro "Night Press" usa fondo tinta, texto crema y acentos verde claro/papel.
+- El tema claro "AtomSN Light" usa fondo crema, tinta para texto y acentos verde/negro.
+- El tema oscuro "AtomSN Dark" usa fondo tinta, texto crema y acentos verde claro/papel.
 - Los componentes no definen colores propios: consumen exclusivamente tokens semánticos.
 - La paleta base es capa fundacional; no se usa directa en producto.
 
@@ -62,7 +62,7 @@ Valores crudos del sistema. No usar directamente en componentes. Hex, rol y usag
 raw_palette:
 
   paper:
-    # Rampa neutra crema/newsprint cálida. Sustituye a la gris fría del sistema anterior.
+    # Rampa neutra crema cálida. Sustituye a la gris fría del sistema anterior.
     - token: color.paper.50
       hex: "#FBF8F0"
       role: papel más claro
@@ -148,7 +148,7 @@ raw_palette:
     - token: color.ink.bg
       hex: "#16140F"
       role: fondo base del tema oscuro
-      usage: bg.base (dark "Night Press")
+      usage: bg.base (dark "AtomSN Dark")
 
   green:
     # Verde césped cálido. Acento único de interacción. Escaso.
@@ -203,7 +203,7 @@ raw_palette:
       usage: valor de escala
 
   yellow:
-    # Mostaza newsprint. Doble función: highlight "marcador" editorial + tarjeta amarilla/advertencia.
+    # Mostaza editorial. Doble función: highlight "marcador" editorial + tarjeta amarilla/advertencia.
     - token: color.yellow.50
       hex: "#FBF4D8"
       role: amarillo muy claro
@@ -367,7 +367,7 @@ Los tokens `*.500` de las familias de estado (`green`/`yellow`/`red`) son de **R
 
 - `status.live` / `status.error` / `status.success` / `status.warning` / `status.info` → relleno (`*.500`, yellow.500, indigo.500).
 - `status.liveText` / `status.errorText` / `status.successText` / `status.warningText` / `status.infoText` → texto sobre papel (`red.700`, `green.700`, `yellow.800`, `indigo.700`).
-- En **dark "Night Press"**, el texto de estado usa variantes más claras (`*.300`/`*.400`: `red.300`, `green.300`, `yellow.300`, `indigo.400`) para mantener AA sobre fondo tinta.
+- En **dark "AtomSN Dark"**, el texto de estado usa variantes más claras (`*.300`/`*.400`: `red.300`, `green.300`, `yellow.300`, `indigo.400`) para mantener AA sobre fondo tinta.
 
 No usar `*.500` como color de texto pequeño sobre papel: no cumple contraste.
 
@@ -375,7 +375,7 @@ No usar `*.500` como color de texto pequeño sobre papel: no cumple contraste.
 
 ## Tokens semánticos
 
-Capa de uso en producto. Los componentes consumen **solo** estos tokens. Cada token resuelve a un token base por modo (`semantic.light` "Paper" / `semantic.dark` "Night Press").
+Capa de uso en producto. Los componentes consumen **solo** estos tokens. Cada token resuelve a un token base por modo (`semantic.light` "AtomSN Light" / `semantic.dark` "AtomSN Dark").
 
 ```yaml
 semantic_tokens:
@@ -579,7 +579,7 @@ semantic_tokens:
 
 Pares de colores clave del sistema con ratio WCAG verificado.
 
-### Light "Paper" (sobre `paper.50` #FBF8F0)
+### AtomSN Light (sobre `paper.50` #FBF8F0)
 
 | Par | Ratio | WCAG |
 |---|---|---|
@@ -592,7 +592,7 @@ Pares de colores clave del sistema con ratio WCAG verificado.
 | `status.infoText` (`indigo.700`) sobre `bg.base` | 7.5:1 | AAA ✓ |
 | `text.onPrimary` (`paper.50`) sobre `action.primary` (`green.500`) | 3.8:1 | AA large ✓ (solo bold ≥14px) |
 
-### Dark "Night Press" (sobre `ink.bg` #16140F)
+### AtomSN Dark (sobre `ink.bg` #16140F)
 
 | Par | Ratio | WCAG |
 |---|---|---|
